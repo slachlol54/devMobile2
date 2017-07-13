@@ -1,0 +1,12 @@
+<ion-view view-title="Liste des contract">
+  <ion-content>
+
+    <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+
+      <ion-item ng-repeat="contract in contracts" class="item-remove-animate" ui-sref="stationList({id : contract.id})">
+        {{contract.name}}
+
+      </ion-item>
+
+  </ion-content>
+</ion-view>

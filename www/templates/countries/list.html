@@ -1,0 +1,17 @@
+<ion-view view-title="Liste des pays">
+
+
+  <ion-content>
+
+    <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+
+      <ion-item ng-repeat="countrie in countries" class="item-remove-animate" ui-sref="countryDetail({iso2 : countrie.iso2})">
+        {{countrie.name}}
+      </ion-item>
+
+  </ion-content>
+
+
+</ion-view>
+
+

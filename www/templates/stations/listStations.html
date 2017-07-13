@@ -1,0 +1,31 @@
+<ion-view view-title="Liste des stations">
+  <ion-content>
+
+    <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+
+      <div class="item col-header item-icon-right">
+        <div class="flex-container wrap">
+          <div class="nom">Nom</div>
+          <div class="adresse">Adresse</div>
+          <div class="boolean">Vélo dispo </div>
+          <div class="boolean">Place vide</div>
+          <div class="boolean">Achat ticket</div>
+          <div class="boolean">Statut</div>
+
+        </div>
+      </div>
+
+      <ion-item ng-repeat="station in stations" class="item-remove-animate">
+        <div class="flex-container">
+
+          <div class="nom">{{station.name}}</div>
+          <div class="adresse">{{station.address}}</div>
+          <div class="boolean">{{station.nbSpots}}&nbsp<i class="icon ion-android-bicycle"></i></div>
+          <div class="boolean">{{station.availableFreeSpots}}</div>
+          <div class="boolean">{{station.banking?"Oui":"Non"}}</div>
+          <div class="boolean" ng-class="{close:!station.open, open:station.open}">{{station.open?"Ouvert":"Fermer"}}</div>
+
+        </div>
+      </ion-item>
+  </ion-content>
+</ion-view>

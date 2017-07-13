@@ -1,0 +1,23 @@
+<div class="map-container" data-tap-disabled="true">
+  <ng-map id="map" class="map" default-style="false" zoom="14" center="[{{latitude}}, {{longitude}}]"
+          zoom-control="true"
+          scale-control="false" map-type-control="false"
+          street-view-control="false" map-initialized="init(map)">
+
+    <marker position="[{{latitude}}, {{longitude}}]" class=""></marker>
+
+   <marker ng-repeat="countrie in countries" position="[{{countrie.latitude}}, {{countrie.longitude}}]">
+
+    </marker>
+
+
+    <!--<custom-marker ng-repeat="countrieService in countriesService" position="[{{countrieService.latitude}}, {{countrieService.longitude}}]" >
+      <h3 class="marker-title">{{countrieService.name}}</h3>
+    </custom-marker>-->
+  </ng-map>
+</div>
+
+
+
+
+

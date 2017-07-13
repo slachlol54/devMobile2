@@ -1,0 +1,90 @@
+/*!* Empty. Add your own CSS if you like *!
+body {
+  cursor: url('https://ionicframework.com/img/finger.png'), auto;
+}*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+/** For the task list header columns and tasks **/
+.flex-container {
+
+  list-style: none;
+  border: none;
+  display: flex;
+}
+
+.wrap    {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+.low-pad-item {
+  padding: 0;
+  margin: 0;
+}
+
+.col-header {
+  font-weight: bold;
+}
+
+.nom {
+  white-space:nowrap;
+  width: 30%;
+  float: left;
+  padding: 2px 5px;
+}
+
+.adresse {
+  white-space:nowrap;
+  width: 40%;
+  float: left;
+  padding: 2px 5px;
+}
+
+.boolean {
+  white-space:nowrap;
+  width: 7.5%;
+  padding: 2px 5px;
+}
+
+.col-header > .column {
+  padding: 5px 5px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.column-sort {
+  min-width:13%;
+  float: right;
+  text-align: right;
+  padding-right: 2px;
+}
+
+.open {
+  color: green;
+}
+
+.close {
+  color: red;
+}
+.map-container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.map
+{
+  height: 100%;
+  width: 100%;
+}
+
+
